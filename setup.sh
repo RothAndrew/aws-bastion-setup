@@ -2,8 +2,7 @@
 
 sudo yum update -y
 
-echo -e "Enter the default region you want to use: "
-read region
+read -p "Enter the default region you want to use: " region
 mkdir -p ~/.aws
 cat <<EOF > ~/.aws/config
 [default]
